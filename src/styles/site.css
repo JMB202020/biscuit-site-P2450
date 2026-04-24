@@ -21,5 +21,7 @@
 
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); color: var(--color-ink); background-color: var(--color-brand-bg); }
+/* CRITICAL: never set color on h1-h6 — it overrides Tailwind text-white on dark sections */
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
+/* Note: no height:auto on img — it overrides h-full on absolute hero images */
 img { max-width: 100%; display: block; }
