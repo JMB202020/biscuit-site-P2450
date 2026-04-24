@@ -2,193 +2,246 @@
 import '../styles/site.css';
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Soapy Mutts Dog Wash — Mobile Dog Grooming in Newcastle, Gateshead and Durham</title>
-  <meta name="description" content="Soapy Mutts Dog Wash offers mobile dog grooming including bath, clip and nail trim. We come to your home in our state-of-the-art grooming van. Serving Newcastle, Gateshead and Durham." />
-  
+  <title>Services | Soapy Mutts Dog Wash — Dog Grooming in Newcastle</title>
+  <meta name="description" content="Dog grooming services from Soapy Mutts in Newcastle. Full grooms, baths, clips, nail trims, de-shedding, puppy introductions and breed-specific expertise." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
 <body>
 
-<!-- Preview Banner -->
-    <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Soapy Mutts Dog Wash</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2450&amp;name=Soapy%20Mutts%20Dog%20Wash" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+<div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Soapy Mutts Dog Wash</strong></span><a href="https://biscuitweb.co.uk/activate?id=P2450&amp;name=Soapy%20Mutts%20Dog%20Wash" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-    <div class="relative z-10 max-w-3xl mx-auto text-center text-white flex flex-col items-center justify-center" style="min-height:40vh;">
-    <span class="inline-block text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-4" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);">📍 Ryton, Tyne and Wear</span>
+<!-- Nav -->
+<header class="bg-white sticky top-[45px] z-40" style="border-bottom:1px solid #E8CEF0;box-shadow:0 1px 6px rgba(74,26,107,0.08);">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/P2450" class="flex items-center gap-2">
+      <span class="text-2xl">🐾</span>
+      <span class="font-black text-xl" style="color:#4A1A6B;">Soapy Mutts</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="/P2450" style="color:#2A0A3E;" class="font-semibold hover:opacity-70 transition-opacity">Home</a>
+      <a href="/P2450/services-html" style="color:#C2538A;" class="font-semibold hover:opacity-70 transition-opacity">Services</a>
+      <a href="/P2450/gallery-html" style="color:#2A0A3E;" class="font-semibold hover:opacity-70 transition-opacity">Gallery</a>
+      <a href="/P2450/contact-me-html" class="text-white px-5 py-2 rounded-full font-bold hover:opacity-90 transition-opacity" style="background:#C2538A;">Book Now</a>
+    </nav>
+    <button id="menu-toggle" class="md:hidden p-2" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden" style="border-top:1px solid #E8CEF0;">
+    <nav class="flex flex-col px-4 py-4 gap-4">
+      <a href="/P2450" style="color:#2A0A3E;" class="font-semibold">Home</a>
+      <a href="/P2450/services-html" style="color:#C2538A;" class="font-semibold">Services</a>
+      <a href="/P2450/gallery-html" style="color:#2A0A3E;" class="font-semibold">Gallery</a>
+      <a href="/P2450/contact-me-html" class="font-bold" style="color:#C2538A;">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="py-16 px-4 text-center" style="background:#4A1A6B;">
+  <div class="max-w-3xl mx-auto">
+    <span class="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 text-white" style="background:rgba(194,83,138,0.4);border:1px solid rgba(255,255,255,0.3);">📍 Newcastle</span>
     <h1 class="text-4xl md:text-5xl font-black text-white mb-4">Our Services</h1>
-    <p class="text-lg" style="opacity:0.9;">Everything your dog needs, done in our mobile grooming van, right outside your door.</p>
+    <p class="text-lg text-white" style="opacity:0.9;">Everything your dog needs to look and feel their best, delivered by our experienced grooming team.</p>
   </div>
 </section>
 
-<!-- Services Introduction -->
+<!-- Main Packages -->
 <section class="py-16 px-4 bg-white">
   <div class="max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-3xl font-black mb-4" style="color:#001F3D;">The Pampered Pouches Package</h2>
-        <p class="mb-4" style="color:#003D7A;">During every visit your barking buddy will be treated to a bath, clip and nail trim. We take care of everything in our state of the art mobile grooming van, so your house stays spotless and stress-free.</p>
-        <p class="mb-6" style="color:#003D7A;">It is quick, convenient and all done within an hour. With one to one attention your dog remains calm and gets the TLC they truly deserve.</p>
-        <ul class="space-y-3">
-          <li class="flex items-center gap-3">
-            <span class="text-2xl">✅</span>
-            <span style="color:#001F3D;" class="font-medium">Done within an hour</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <span class="text-2xl">✅</span>
-            <span style="color:#001F3D;" class="font-medium">One to one attention throughout</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <span class="text-2xl">✅</span>
-            <span style="color:#001F3D;" class="font-medium">No mess in your home</span>
-          </li>
-          <li class="flex items-center gap-3">
-            <span class="text-2xl">✅</span>
-            <span style="color:#001F3D;" class="font-medium">Your dog stays calm and relaxed</span>
-          </li>
+    <h2 class="text-3xl font-black text-center mb-12" style="color:#2A0A3E;">Full Grooming Packages</h2>
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="rounded-2xl p-8" style="background:#FDF0FF;border:2px solid #E8CEF0;">
+        <div class="text-5xl mb-4">🐩</div>
+        <h3 class="text-2xl font-black mb-3" style="color:#2A0A3E;">Full Groom</h3>
+        <p class="mb-4" style="color:#7B4E9B;">Our most popular package. Everything your dog needs in one visit, done with care and attention.</p>
+        <ul class="space-y-2 text-sm" style="color:#7B4E9B;">
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Bath with premium shampoo and conditioner</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Blow dry and thorough brush out</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Breed-appropriate clip and scissor finish</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Nail trim</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Ear clean</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Finishing spritz</li>
         </ul>
       </div>
-      <div class="rounded-2xl overflow-hidden" style="border:2px solid #B3D1F0;">
-        <img src="/P2450/images/675389.jpg" alt="Dog after a professional groom" class="w-full h-full object-cover" loading="lazy" width="219" height="292" style="width:100%;height:auto;" />
+      <div class="rounded-2xl p-8" style="background:#FDF0FF;border:2px solid #E8CEF0;">
+        <div class="text-5xl mb-4">🛁</div>
+        <h3 class="text-2xl font-black mb-3" style="color:#2A0A3E;">Bath &amp; Tidy</h3>
+        <p class="mb-4" style="color:#7B4E9B;">A thorough freshen-up between full grooms to keep your dog clean and comfortable.</p>
+        <ul class="space-y-2 text-sm" style="color:#7B4E9B;">
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Bath with premium shampoo</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Blow dry and brush out</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Tidy trim around face, paws and tail</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Nail trim</li>
+          <li class="flex items-center gap-2"><span style="color:#C2538A;">✓</span> Ear clean</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Service Cards -->
-<section class="py-16 px-4" style="background:#F2F7FC;">
+<!-- Add-On Services -->
+<section class="py-16 px-4" style="background:#FDF0FF;">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-black text-center mb-12" style="color:#001F3D;">What Every Visit Includes</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-2xl overflow-hidden" style="border:1px solid #B3D1F0;">
-        <div class="p-6 text-center" style="background:#D9E8F7;">
-          <div class="text-5xl mb-2">🛁</div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-3" style="color:#001F3D;">Bath</h3>
-          <p style="color:#003D7A;">A thorough, gentle wash using quality shampoo suited to your dog's coat. We rinse and dry your dog completely before moving on to the clip.</p>
-        </div>
+    <h2 class="text-3xl font-black text-center mb-4" style="color:#2A0A3E;">Add-On Treatments</h2>
+    <p class="text-center max-w-xl mx-auto mb-12" style="color:#7B4E9B;">Boost any groom with one of our specialist treatments for that extra bit of luxury.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-2xl p-6 text-center" style="border:1px solid #E8CEF0;">
+        <div class="text-4xl mb-3">🪮</div>
+        <h3 class="font-bold mb-2" style="color:#2A0A3E;">De-shedding Treatment</h3>
+        <p class="text-sm" style="color:#7B4E9B;">Reduces shedding dramatically. Ideal for Labradors, Huskies and German Shepherds.</p>
       </div>
-      <div class="bg-white rounded-2xl overflow-hidden" style="border:1px solid #B3D1F0;">
-        <div class="p-6 text-center" style="background:#D9E8F7;">
-          <div class="text-5xl mb-2">✂️</div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-3" style="color:#001F3D;">Clip</h3>
-          <p style="color:#003D7A;">A professional clip tailored to your dog's breed and coat type. We take care to follow the natural shape of your dog and keep them comfortable throughout.</p>
-        </div>
+      <div class="bg-white rounded-2xl p-6 text-center" style="border:1px solid #E8CEF0;">
+        <div class="text-4xl mb-3">💆</div>
+        <h3 class="font-bold mb-2" style="color:#2A0A3E;">Blueberry Facial</h3>
+        <p class="text-sm" style="color:#7B4E9B;">A gentle brightening facial scrub that clears tear stains and leaves skin refreshed.</p>
       </div>
-      <div class="bg-white rounded-2xl overflow-hidden" style="border:1px solid #B3D1F0;">
-        <div class="p-6 text-center" style="background:#D9E8F7;">
-          <div class="text-5xl mb-2">💅</div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-3" style="color:#001F3D;">Nail Trim</h3>
-          <p style="color:#003D7A;">Safe and careful nail trimming to keep your dog comfortable and active. Overgrown nails can cause discomfort, so we always include this as standard.</p>
-        </div>
+      <div class="bg-white rounded-2xl p-6 text-center" style="border:1px solid #E8CEF0;">
+        <div class="text-4xl mb-3">🐾</div>
+        <h3 class="font-bold mb-2" style="color:#2A0A3E;">Paw Balm</h3>
+        <p class="text-sm" style="color:#7B4E9B;">Nourishing balm applied to paws to soothe and protect against rough ground and hot pavements.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 text-center" style="border:1px solid #E8CEF0;">
+        <div class="text-4xl mb-3">🌸</div>
+        <h3 class="font-bold mb-2" style="color:#2A0A3E;">Cologne Finish</h3>
+        <p class="text-sm" style="color:#7B4E9B;">A pet-safe finishing spritz so your dog smells wonderful long after their groom.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Pricing Section -->
+<!-- Breed-Specific Expertise -->
 <section class="py-16 px-4 bg-white">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="text-3xl font-black text-center mb-4" style="color:#001F3D;">Pricing</h2>
-    <p class="text-center mb-8" style="color:#003D7A;">Pricing varies depending on your dog's breed, coat type and size. Get in touch and we will give you a personalised quote.</p>
-    <div class="rounded-2xl p-8 text-center" style="background:#EBF3FB;border:2px solid #B3D1F0;">
-      <div class="text-4xl mb-4">📋</div>
-      <p class="font-bold text-lg mb-2" style="color:#001F3D;">Request a Quote</p>
-      <p class="mb-6" style="color:#003D7A;">Call us or send a message and we will get back to you with a price tailored to your dog.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:+447946469445" style="background:#0066CC;" class="text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity">Call 07946 469445</a>
-        <a href="/P2450/contact-me-html" class="px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" style="border:2px solid #0066CC;color:#0066CC;">Send a Message</a>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-black text-center mb-4" style="color:#2A0A3E;">Breed-Specific Expertise</h2>
+    <p class="text-center max-w-2xl mx-auto mb-12" style="color:#7B4E9B;">Different breeds have very different grooming needs. Our team is trained across a wide range of coats and temperaments — we know what works for your dog.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl p-6" style="background:#FDF0FF;border:1px solid #E8CEF0;">
+        <h3 class="font-bold text-lg mb-3" style="color:#2A0A3E;">🐩 Poodles &amp; Doodles</h3>
+        <p class="text-sm mb-3" style="color:#7B4E9B;">Curly and wavy coats need regular grooming to prevent matting. We offer breed-standard and teddy bear clips.</p>
+        <p class="text-xs font-semibold" style="color:#C2538A;">Cockapoo · Labradoodle · Goldendoodle · Poodle</p>
+      </div>
+      <div class="rounded-2xl p-6" style="background:#FDF0FF;border:1px solid #E8CEF0;">
+        <h3 class="font-bold text-lg mb-3" style="color:#2A0A3E;">🐕 Spaniels &amp; Setters</h3>
+        <p class="text-sm mb-3" style="color:#7B4E9B;">Silky feathered coats that tangle easily. We hand strip or clip depending on your preference and your dog's lifestyle.</p>
+        <p class="text-xs font-semibold" style="color:#C2538A;">Cocker · Springer · Cavalier · Irish Setter</p>
+      </div>
+      <div class="rounded-2xl p-6" style="background:#FDF0FF;border:1px solid #E8CEF0;">
+        <h3 class="font-bold text-lg mb-3" style="color:#2A0A3E;">🦮 Double-Coated Breeds</h3>
+        <p class="text-sm mb-3" style="color:#7B4E9B;">Heavy shedders that benefit from our de-shedding treatment. We never shave double coats — we work with them.</p>
+        <p class="text-xs font-semibold" style="color:#C2538A;">Husky · German Shepherd · Golden Retriever · Labrador</p>
+      </div>
+      <div class="rounded-2xl p-6" style="background:#FDF0FF;border:1px solid #E8CEF0;">
+        <h3 class="font-bold text-lg mb-3" style="color:#2A0A3E;">🐶 Terriers</h3>
+        <p class="text-sm mb-3" style="color:#7B4E9B;">Wiry, dense coats that can be hand stripped or clipped. We adapt our technique to your terrier's individual coat.</p>
+        <p class="text-xs font-semibold" style="color:#C2538A;">Westie · Schnauzer · Jack Russell · Border Terrier</p>
+      </div>
+      <div class="rounded-2xl p-6" style="background:#FDF0FF;border:1px solid #E8CEF0;">
+        <h3 class="font-bold text-lg mb-3" style="color:#2A0A3E;">🐕‍🦺 Short-Coated Breeds</h3>
+        <p class="text-sm mb-3" style="color:#7B4E9B;">Even shorthaired dogs benefit from a professional bath, dry and nail trim to stay fresh and healthy.</p>
+        <p class="text-xs font-semibold" style="color:#C2538A;">Boxer · Greyhound · Beagle · Dalmatian</p>
+      </div>
+      <div class="rounded-2xl p-6" style="background:#FDF0FF;border:1px solid #E8CEF0;">
+        <h3 class="font-bold text-lg mb-3" style="color:#2A0A3E;">🐾 Puppies</h3>
+        <p class="text-sm mb-3" style="color:#7B4E9B;">We offer gentle introductory grooms for puppies, building a positive relationship with grooming from the very start.</p>
+        <p class="text-xs font-semibold" style="color:#C2538A;">All breeds welcome from 16 weeks (post-vaccination)</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Why Mobile Grooming -->
-<section class="py-16 px-4" style="background:#F2F7FC;">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-black text-center mb-12" style="color:#001F3D;">Why Mobile Grooming?</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="flex gap-4 p-6 bg-white rounded-2xl" style="border:1px solid #B3D1F0;">
-        <div class="text-3xl flex-shrink-0">⏱️</div>
-        <div>
-          <h3 class="font-bold text-lg mb-2" style="color:#001F3D;">Saves You Time</h3>
-          <p style="color:#003D7A;">No need to drop off and collect your pet. We come to you at a time that suits your schedule.</p>
-        </div>
-      </div>
-      <div class="flex gap-4 p-6 bg-white rounded-2xl" style="border:1px solid #B3D1F0;">
-        <div class="text-3xl flex-shrink-0">🏠</div>
-        <div>
-          <h3 class="font-bold text-lg mb-2" style="color:#001F3D;">Your Home Stays Clean</h3>
-          <p style="color:#003D7A;">All grooming is done inside our van. No wet dog mess, no clipped fur on your floor.</p>
-        </div>
-      </div>
-      <div class="flex gap-4 p-6 bg-white rounded-2xl" style="border:1px solid #B3D1F0;">
-        <div class="text-3xl flex-shrink-0">😌</div>
-        <div>
-          <h3 class="font-bold text-lg mb-2" style="color:#001F3D;">Less Stress for Your Dog</h3>
-          <p style="color:#003D7A;">No other dogs around, no waiting cages. Your dog gets calm, one to one attention from start to finish.</p>
-        </div>
-      </div>
-      <div class="flex gap-4 p-6 bg-white rounded-2xl" style="border:1px solid #B3D1F0;">
-        <div class="text-3xl flex-shrink-0">📍</div>
-        <div>
-          <h3 class="font-bold text-lg mb-2" style="color:#001F3D;">We Cover Your Area</h3>
-          <p style="color:#003D7A;">We operate throughout Newcastle, Gateshead and Durham. Based in Ryton, we are always nearby.</p>
-        </div>
-      </div>
+<!-- Pricing -->
+<section class="py-16 px-4" style="background:#FDF0FF;">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-black text-center mb-4" style="color:#2A0A3E;">Pricing Guide</h2>
+    <p class="text-center max-w-xl mx-auto mb-10" style="color:#7B4E9B;">Prices vary depending on your dog's breed, size and coat condition. Get in touch for a personalised quote — we are always happy to chat.</p>
+    <div class="bg-white rounded-2xl overflow-hidden" style="border:1px solid #E8CEF0;">
+      <table class="w-full text-sm">
+        <thead>
+          <tr style="background:#4A1A6B;">
+            <th class="text-left text-white font-bold px-6 py-4">Service</th>
+            <th class="text-left text-white font-bold px-6 py-4">Small</th>
+            <th class="text-left text-white font-bold px-6 py-4">Medium</th>
+            <th class="text-right text-white font-bold px-6 py-4">Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #E8CEF0;">
+            <td class="px-6 py-4 font-semibold" style="color:#2A0A3E;">Full Groom</td>
+            <td class="px-6 py-4" style="color:#7B4E9B;">Contact us</td>
+            <td class="px-6 py-4" style="color:#7B4E9B;">Contact us</td>
+            <td class="px-6 py-4 text-right" style="color:#7B4E9B;">Contact us</td>
+          </tr>
+          <tr style="border-bottom:1px solid #E8CEF0;background:#FDF0FF;">
+            <td class="px-6 py-4 font-semibold" style="color:#2A0A3E;">Bath &amp; Tidy</td>
+            <td class="px-6 py-4" style="color:#7B4E9B;">Contact us</td>
+            <td class="px-6 py-4" style="color:#7B4E9B;">Contact us</td>
+            <td class="px-6 py-4 text-right" style="color:#7B4E9B;">Contact us</td>
+          </tr>
+          <tr style="border-bottom:1px solid #E8CEF0;">
+            <td class="px-6 py-4 font-semibold" style="color:#2A0A3E;">Nail Trim Only</td>
+            <td class="px-6 py-4" style="color:#7B4E9B;">Contact us</td>
+            <td class="px-6 py-4" style="color:#7B4E9B;">Contact us</td>
+            <td class="px-6 py-4 text-right" style="color:#7B4E9B;">Contact us</td>
+          </tr>
+          <tr style="background:#FDF0FF;">
+            <td class="px-6 py-4 font-semibold" style="color:#2A0A3E;">Puppy Introduction</td>
+            <td class="px-6 py-4 font-bold" style="color:#C2538A;" colspan="3">Contact us for puppy pricing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center mt-8">
+      <a href="/P2450/contact-me-html" class="inline-block text-white px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" style="background:#C2538A;">Get a Quote</a>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="py-16 px-4" style="background:#0066CC;">
-  <div class="max-w-2xl mx-auto text-center text-white">
-    <h2 class="text-3xl font-black mb-4">Book Your Dog's Groom</h2>
-    <p class="mb-8" style="opacity:0.9;">Ready to treat your dog? Get in touch today and we will arrange a visit at a time that suits you.</p>
-    <a href="/P2450/contact-me-html" class="inline-block bg-white font-bold px-8 py-3 rounded-full text-lg hover:opacity-90 transition-opacity" style="color:#0066CC;">Get in Touch</a>
+<section class="py-16 px-4" style="background:#C2538A;">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-3xl font-black text-white mb-4">Book Your Dog's Groom</h2>
+    <p class="text-white mb-8" style="opacity:0.93;">Ready to get started? Drop us a message and we will get your dog booked in.</p>
+    <a href="/P2450/contact-me-html" class="inline-block px-8 py-3 rounded-full font-bold hover:opacity-90 transition-opacity" style="background:white;color:#C2538A;">Get in Touch</a>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="py-12 px-4" style="background:#001F3D;color:#fff;">
+<footer class="py-12 px-4" style="background:#2A0A3E;color:#fff;">
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8">
     <div>
-      <img src="/P2450/images/p379.png" alt="Soapy Mutts Dog Wash" width="120" height="99" class="h-14 w-auto mb-4" style="filter:brightness(0) invert(1);" loading="lazy" />
-      <p class="text-sm" style="color:rgba(255,255,255,0.7);">Mobile dog grooming in Newcastle, Gateshead and Durham. Serving happy hounds since 2000.</p>
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-3xl">🐾</span>
+        <span class="font-black text-xl text-white">Soapy Mutts Dog Wash</span>
+      </div>
+      <p class="text-sm" style="color:rgba(255,255,255,0.7);">Professional dog grooming in Newcastle. Every dog deserves to feel fabulous.</p>
+      <p class="text-sm mt-2" style="color:rgba(255,255,255,0.7);">Newcastle</p>
     </div>
     <div>
-      <h3 class="font-bold text-lg mb-4">Pages</h3>
+      <h3 class="font-bold text-lg mb-4 text-white">Pages</h3>
       <ul class="space-y-2" style="color:rgba(255,255,255,0.8);">
-        <li><a href="/P2450/" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="/P2450" class="hover:text-white transition-colors">Home</a></li>
         <li><a href="/P2450/services-html" class="hover:text-white transition-colors">Services</a></li>
         <li><a href="/P2450/gallery-html" class="hover:text-white transition-colors">Gallery</a></li>
         <li><a href="/P2450/contact-me-html" class="hover:text-white transition-colors">Contact Us</a></li>
       </ul>
     </div>
     <div>
-      <h3 class="font-bold text-lg mb-4">Get in Touch</h3>
+      <h3 class="font-bold text-lg mb-4 text-white">Find Us</h3>
       <ul class="space-y-2" style="color:rgba(255,255,255,0.8);">
-        <li>Coalburns, Ryton</li>
-        <li><a href="tel:+447946469445" class="hover:text-white transition-colors">07946 469445</a></li>
-        <li class="flex gap-3 pt-2">
-          <a href="http://www.facebook.com/soapymutts" class="hover:text-white transition-colors" aria-label="Facebook">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="http://twitter.com/@soapymutt" class="hover:text-white transition-colors" aria-label="Twitter">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-          </a>
-        </li>
+        <li>📍 Newcastle</li>
+        <li><a href="/P2450/contact-me-html" class="hover:text-white transition-colors">Book via contact form</a></li>
       </ul>
     </div>
   </div>
   <div class="max-w-6xl mx-auto pt-8 text-center text-sm" style="border-top:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);">
-    <p>&copy; 2024 Soapy Mutts Dog Wash. All rights reserved. Coalburns, Ryton.</p>
+    <p>&copy; {new Date().getFullYear()} Soapy Mutts Dog Wash. All rights reserved. Newcastle.</p>
     <p class="mt-1">This is a sample site built by <a href="https://biscuitweb.co.uk" class="underline hover:text-white">Biscuit Web</a> to showcase our work.</p>
   </div>
 </footer>
@@ -196,7 +249,13 @@ import '../styles/site.css';
 <script>
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
-  toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  toggle?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+    toggle.setAttribute('aria-expanded', String(!menu?.classList.contains('hidden')));
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => menu?.classList.add('hidden'));
+  });
 </script>
 
 </body>
